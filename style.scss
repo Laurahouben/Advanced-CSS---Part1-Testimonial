@@ -1,0 +1,73 @@
+@import "./variables";
+@mixin PaddingMargin {
+    padding-top: 45px; 
+    padding-bottom: 20px;
+    margin-top: -40px;   
+}
+
+body {
+    display: block; 
+    width: 400px; 
+}
+
+
+/* main */ 
+
+.box {
+    background: #d4d9e3;
+    margin:5px; 
+    padding:40px;
+    width:380px; 
+}
+
+.content {
+    width: 390px; 
+    text-align: center; 
+}
+
+.up {
+    background-color: white; 
+    border-top-left-radius: $borders;
+    border-top-right-radius: $borders;
+    padding: 30px; 
+    box-shadow: 0px 2px 2px 2px rgb(172, 168, 168);
+}
+.introduce {
+    color: rgb(97, 96, 96);
+    font-size: 20px;
+    text-align: left; 
+    line-height: 34px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.laura{ 
+    border-radius: 100px; 
+    border: solid white 5px; 
+    width: 102px;
+    height: 110px; 
+    margin-bottom: -50px;
+    
+}
+.under {
+    background-color: #686de0;
+    border-bottom-left-radius: $borders;
+    border-bottom-right-radius: $borders; 
+    @include PaddingMargin(); 
+    box-shadow:  4px 4px 4px rgb(172, 168, 168);
+}
+   
+.name {
+    color: white; 
+    font-size: 20px;
+    margin-bottom: 1px;
+    letter-spacing: 0.06em; 
+    padding-top: 8px;
+    font-family: $Lettertype;
+}
+
+.website {
+    margin-top: 8px; 
+    color: #b8b8e0;
+    font-size: 18px; 
+    font-family: $Lettertype;
+    letter-spacing: 0.03em;
+}
